@@ -9,7 +9,7 @@
     <div id="output"></div>
     <script>
         document.getElementById('fetchData').addEventListener('click', function() {
-            fetch('/path-to-your-php-script.php')
+            fetch('/index.php')
                 .then(response => response.text())
                 .then(data => {
                     document.getElementById('output').innerHTML = data;
