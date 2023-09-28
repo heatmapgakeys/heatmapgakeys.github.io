@@ -1,0 +1,31 @@
+.modal-body-log{
+	position: relative;
+    flex: 1 1 auto;
+    padding: 1rem 2rem;
+	align-self: flex-start;
+	}
+
+	.h6, h6 {
+    font-size: .9rem;
+	text-align: start;
+	}
+	.section-header{
+		padding-bottom: 10px;
+		padding-left: 10px;
+	}
+    .section-header-breadcrumb{
+        padding-top: 10px;
+    }
+
+	.breadcrumb-item{
+		padding-bottom: 10px;
+	}
+    .head{
+        text-align: center;
+    }
+    .data{
+        text-align: center;
+    }
+    .card-header{
+        width: 100%;
+    }

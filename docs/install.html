@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no"
+      name="viewport"
+    />
+    <title>HeatSketch Documentation</title>
+    <link rel="shortcut icon" href="../storage/app/public/assets/favicon/favicon.png" />
+
+    <!-- General CSS Files -->
+    <link
+      rel="stylesheet"
+      href="../assets/modules/bootstrap/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../assets/modules/fontawesome/css/all.min.css"
+    />
+
+    <!-- CSS Libraries -->
+    <link rel="stylesheet" href="../assets/modules/prism/prism.css" />
+    <link
+      rel="stylesheet"
+      href="../assets/modules/chocolat/dist/css/chocolat.css"
+    />
+
+    <!-- Template CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/components.css" />
+    <link rel="stylesheet" href="assets/css/custom.css" />
+  </head>
+
+  <body>
+    <div id="app">
+      <div class="main-wrapper">
+        <nav class="navbar navbar-expand-lg main-navbar">
+          <a
+            href="#"
+            class="nav-link sidebar-gone-show h-auto"
+            data-toggle="sidebar"
+            ><i class="fas fa-bars"></i
+          ></a>
+          <a href="../" class="navbar-brand text-center">
+            <img src="../storage/app/public/assets/logo/logo.png" style="max-width: 150px" />
+          </a>
+          <div class="nav-collapse mr-lg-auto mr-0 ml-auto m-lg-0">
+            <!-- <a class="sidebar-gone-show nav-collapse-toggle sidebar-gone-show nav-link" href="#">
+            <i class="fas fa-ellipsis-v"></i>
+          </a> -->
+          </div>
+          <ul
+            class="navbar-nav d-lg-flex align-items-center justify-content-end w-25"
+          >
+            <li class="ml-lg-2">
+              
+            </li>
+          </ul>
+        </nav>
+        <div class="main-sidebar sidebar-style-2">
+          <aside id="sidebar-wrapper">
+            <div class="sidebar-brand sidebar-brand-sm">
+              <a href="../"><img src="../storage/app/public/assets/favicon/favicon.png" /></a>
+            </div>
+            <ul>
+              
+              <li>
+                <ul>
+                  installation
+                  <li>
+                    <a href="install.html" class="active"
+                      >How to Install</a>
+                  </li>
+                </ul>
+              </li>
+              <li><a href="live_users.html" class="active">Live Users</a></li>
+              <li>
+                STATS
+                <ul>
+                   <li>
+                    <a href="domain.html" class="active">Domains</a>
+                  </li>
+                  <li><a href="heatmap.html">Heatmaps</a></li>
+                  <li>
+                    <a href="session_recording.html">Recordings</a>
+                   </li>
+                  
+                 
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  Administration
+                  <li>
+                    <a href="settings.html" class="active"
+                      >Settings</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#user_team.html" class="active"
+                      >User</a
+                    >
+                  </li>
+                  <li>
+                    <a href="package_role.html" class="active"
+                      >Package</a
+                    >
+                  </li>
+                  
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  Payment
+                  
+                  <li>
+                    <a href="transaction.html" class="active">Transaction</a>
+                  </li>
+                </ul>
+              </li>
+              
+              <li>
+                <ul>
+                  Update System
+                  <li>
+                    <a href="update.html" class="active">Update</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <!-- Menu -->
+          </aside>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content" style="min-height: 352px">
+          <section class="section">
+            <div class="section-body">
+              <ul>
+                <li><a href="#install">How to Install</a></li>
+              </ul>
+
+              <div class="section-header">
+                <h1 id="install">How to Install?</h1>
+              </div>
+              <hr />
+
+              <iframe width="850" height="415" src="https://www.youtube.com/embed/0-wnawoAedI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+              <br><br>
+
+              <b>Server Configuration :</b>
+              <ul>
+                <li>
+                  PHP v7.4 to 8.x &amp; mysql v5.x</li>
+                <li>
+                  Make sure <strong>curl</strong> is enbaled , <strong>mbstring</strong> is enabled, <strong>set_time_out</strong> is enabled , <strong>safe_mode</strong> is off, <strong>open_base_dir</strong> has no value, <strong>allow_url_fopen</strong>=1 and <strong>mysqli </strong>support is on.</li>
+                <li>Your domain must have https.</li>
+                <li><b>Better performance : </b> set php <b>max_execution_time</b>, mysql <b>connect_timeout</b>, mysql <b>wait_timeout</b> , <b>max_allowed_packet</b> , <b>max_connections</b> to long limit possible, so that your server can process script for long time if needed. Also watch “Bulk Message Frequency Settings” video if you like.</li>
+
+              </ul>
+              <p>
+                [Note: If you get <em>&quot;404 page not found&quot;</em> error then make <strong>AllowOverride</strong> in your virtual host and check if <b>.htaccess</b> file is uploaded successfully in root or not]</p>
+              <b>
+                Installation Manual :</b>
+              <ol>
+                <li>
+                  <strong>Download </strong>.zip package</li>
+                <li>
+                  <strong>Upload </strong>it to your server</li>
+                <li>
+                  <strong>Extract </strong>the package</li>
+                  <li>
+                  Make sure all files and folder have write permission after you extract because this software have auto update feature and system may need to change or replace any project file during auto update process. If you do not want to use auto update feature then make sure atleast <b>.env</b>, <b>public/install.txt</b>,<b>resources/views</b> (folder and child files), <b>app/Http/Controllers</b>(folder and child files), <b>app/Helpers</b>(folder and child files), <b>app/Services</b>(folder and child files), <b>config</b>(folder and child files),<b>assets</b>(folder and child files),<b>routes</b>(folder and child files),<b>storage/app/public</b>(folder and child files)  files have write permission. 
+                </li>
+                <li>
+                  <strong>Run </strong>the uploaded url via browser (<strong>http://yourdomain.com/projectFolder/</strong>) and you will find a interface to provide the <strong>settings </strong>:
+                  <ul>
+                    <li>
+                      <strong>Hostname </strong>: database host name / IP (usually localhost)</li>
+                    <li>
+                      <strong>Database Name</strong> : create a mysql database on your host and write that name here</li>
+                    <li>
+                      <strong>Database username</strong>&nbsp; : username of the created database</li>
+                    <li>
+                      <strong>Database password</strong> : password of the created database</li>
+                    <li>
+                      <strong>Admin Panel Login Email</strong>: this will be used to login as admin</li>
+                    <li>
+                      <strong>Admin Panel Login Password</strong> : password to log in as admin</li>
+
+                    <li>
+                      <strong>Company Name and Company Address</strong></li>
+                    <li>
+                      <strong>Company Phone /&nbsp; Mobile</strong></li>
+                  </ul>
+                </li>
+                <li>
+                  Click install button</li>
+                <li>
+                  You are done.<strong> Log in</strong> with your admin username and password and start using.</li>
+                <li>If installtion page appear again after you hit submit and processing done that means system could not delete application/install.txt and you have to delete that file manually.</li>
+              </ol>
+              <img
+                src="assets/img/install.png"
+                class="img-fluid"
+              />
+            </div>
+                
+            </section>
+        </div>
+      </div>
+    </div>
+
+    <!-- General JS Scripts -->
+    <script src="../assets/modules/jquery.min.js"></script>
+    <script src="../assets/modules/popper.js"></script>
+    <script src="../assets/modules/tooltip.js"></script>
+    <script src="../assets/modules/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../assets/modules/nicescroll/jquery.nicescroll.min.js"></script>
+    <script src="../assets/modules/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/3.0.8/marked.min.js"></script>
+
+    <!-- JS Libraies -->
+    <script src="../assets/modules/prism/prism.js"></script>
+    <script src="assets/js/stisla.js"></script>
+    <script src="../assets/modules/sticky-kit.js"></script>
+    <script src="../assets/modules/chocolat/dist/js/jquery.chocolat.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
+
+    <!-- Template JS File -->
+    <script src="https://unpkg.com/navigo@6.0.2/lib/navigo.min.js"></script>
+  </body>
+</html>

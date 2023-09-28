@@ -1,0 +1,99 @@
+
+.content-body ol {
+    padding-left: 1rem;
+}
+
+.content-body ol li {
+    margin-bottom: 5px;
+}
+
+.domain-card {
+    box-shadow: 0 1px 6px 0 rgb(0 0 0 / 20%), 0 2px 8px 0 rgb(0 0 0 / 19%) !important;
+}
+
+.domain-card .card-title { 
+    font-size: 14px;
+    font-weight: 600;
+    color: #686868;
+}
+
+.domain-card .card-img { 
+    object-fit: cover;
+    object-position: top;
+    height: 160px;
+}
+
+.domain-card .card-status { 
+    font-size: 11px;
+    color: #b5b5c3;
+}
+
+.domain-card .card-engaged { 
+    /*line-height: 3.2;*/
+    font-size: 11px;
+}
+
+.domain-card .card-domain-name {
+    margin: 34px 0 20px 0;
+    font-size: 16px;
+    text-align: center;
+    font-weight: 600;
+    color: #757474;
+}
+
+.domain-card .card-btn .card-btn-item { 
+    padding: 5px 30px;
+    margin: 0 5px;
+    font-size: 12px;
+    color: #5c5c5c;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+.domain-card .card-btn .card-btn-item.a { 
+    background: #D2DAFF;
+}
+
+.domain-card .card-btn .card-btn-item.b { 
+    background: #fbe9d1;
+}
+
+.domain-card .card-btn .card-btn-item.c { 
+    background: #ffddd4;
+}
+
+.domain-card .card-btn2 .card-btn-item { 
+    border-radius: 50%;
+    border: none;
+    height: 40px;
+    width: 40px;
+    color: #ffffff;
+    margin:  0 5px;
+}
+
+.domain-card .card-btn2 .card-btn-item.a[eventType='pause'] { 
+    background: linear-gradient(to bottom right, #C90A6D, #FF48A0);
+}
+.domain-card .card-btn2 .card-btn-item.a[eventType='play'] { 
+    background: linear-gradient(to right, rgba(250, 112, 154, 1), rgba(254, 225, 64, 1));
+}
+
+.domain-card .card-btn2 .card-btn-item.b { 
+    background: linear-gradient(to bottom right, #5E5AEC, #3F9EFC);
+}
+
+.domain-card .card-btn2 .card-btn-item.c { 
+    background: linear-gradient(to bottom right, #e95252, #cf2020)
+}
+.domain-card .card-btn2 .card-btn-item.d { 
+    background: linear-gradient(to bottom right, #5E5AEC, #3F9EFC);
+}
+
+.domain-card .card-btn2 .card-btn-item i { 
+    line-height: 2.8 !important;
+}
+
+.pagination {
+    justify-content: center;
+    margin-top: 20px;
+}
